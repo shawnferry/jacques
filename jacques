@@ -1,0 +1,51 @@
+#!/usr/local/bin/gawk -f
+BEGIN {
+  # Default Mode
+  MODE="encode"
+
+  HELP = " \
+  Default behavior attempts to naively detect the type of file \
+  -e encode \
+  -d decode \
+  -h this help \
+  "
+
+   for (i = 0; i < ARGC; i++)
+     if (ARGV[i] ~ /.jacques/ )
+      MODE="decode"
+    else if (ARGV[i] == "-e") {
+      MODE="encode"
+      delete ARGV[i]
+    } else if (ARGV[i] == "-d") {
+      MODE="decode"
+      delete ARGV[i]
+    } else if (ARGV[i] == "-h") {
+      print HELP
+      exit
+    } else {
+    }
+
+print "Debug:", MODE > "/dev/stderr"
+
+  # Start jacques
+   SJ = "¯\\_(ツ)¯\\_"
+  # End jacques
+   EJ = "_/¯(ツ)_/¯"
+}
+
+{
+if ( MODE == "encode" )
+  if ($0 ~ /\s*\{\s*/)
+    print SJ
+  else if ($0 ~ /\s*\}\s*/ )
+    print EJ
+  else
+    print
+else if ( MODE == "decode")
+  if ( match($0,/¯\_(ツ)¯\_/) )
+    print "{"
+  else if ( match($0,/_\/¯(ツ)_\/¯/))
+   print "}"
+  else if ( $0 !~ /^{/ )
+    print
+}

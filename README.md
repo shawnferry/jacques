@@ -21,4 +21,6 @@ _/¯(ツ)_/¯
 ```
 
 # Implementation
-Jacques is written in AWK
+Jacques is written in AWK.
+
+Currently only the jacques encoder function is implemented
