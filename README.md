@@ -47,9 +47,15 @@ jacques attempts to naively detect the type of file based on the file extension.
 _/¯(ツ)_/¯
 ```
 
-# Known Issues
-Any use of the patterns `¯\_(.)¯\_` and `_/¯(.)_/¯` will be correspondingly
-replaced with `{` and '}'. i.e. `¯\_(A)¯\_`, `_/¯(B)_/¯`
+# Jacques Is Flexible
+Any use of the patterns `¯\_([^\x00-\x7F])¯\_` and `_/¯([^\x00-\x7F])_/¯` will be correspondingly
+replaced with `{` and '}'. That is you can choose any single non-ascii character in the schema start/end tokens.
+
+Non-exhaustive examples:
+* `ϖ` as  `¯\_(ϖ)¯\_` and `_/¯(ϖ)_/¯`
+* `𝛑` as  `¯\_(𝛑)¯\_` and `_/¯(𝛑)_/¯`
+
+You can even mix and match your non-ascii characters in the same file!!!
 
 # Reviews
 

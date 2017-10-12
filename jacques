@@ -42,9 +42,9 @@ if ( MODE == "encode" )
   else
     print
 else if ( MODE == "decode")
-  if ( match($0,/¯\\_\(.\)¯\\_/) )
+  if ( match($0,/¯\\_\([^\x00-\x7F]\)¯\\_/) )
     print "{"
-  else if ( match($0,/_\/¯\(.\)_\/¯/))
+  else if ( match($0,/_\/¯\([^\x00-\x7F]\)_\/¯/))
    print "}"
   else if ( $0 !~ /^{/ )
     print
