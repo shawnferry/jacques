@@ -1,5 +1,5 @@
 # jacques
-The AWK JSON Processor
+The AWKward JSON Processor
 
 Jacques aims to address some concerns with JSON
 * Lack of comment support - jacques supports comments
