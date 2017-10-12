@@ -28,6 +28,15 @@ Currently only the jacques encoder function is implemented
 # Usage
 jacques attempts to naively detect the type of file based on the file extension.
 
+```
+./jacques -- -h
+   Default behavior attempts to naively detect the type of file
+  -e encode
+  -d decode
+  -h this help
+```
+
+
 ./jacques sample/simple.json
 ```
 ¯\_(ツ)¯\_
@@ -37,3 +46,7 @@ jacques attempts to naively detect the type of file based on the file extension.
     "tags": ["home", "green"]
 _/¯(ツ)_/¯
 ```
+
+# Reviews
+
+Jacques is exactly as useless and half as entertaining as on might expect. -- Shawn Ferry

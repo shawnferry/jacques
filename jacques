@@ -4,10 +4,10 @@ BEGIN {
   MODE="encode"
 
   HELP = " \
-  Default behavior attempts to naively detect the type of file \
-  -e encode \
-  -d decode \
-  -h this help \
+  Default behavior attempts to naively detect the type of file \n\
+  -e encode \n\
+  -d decode \n\
+  -h this help \n\
   "
 
    for (i = 0; i < ARGC; i++)
