@@ -24,3 +24,16 @@ _/¯(ツ)_/¯
 Jacques is written in AWK.
 
 Currently only the jacques encoder function is implemented
+
+# Usage
+jacques attempts to naively detect the type of file based on the file extension.
+
+./jacques sample/simple.json
+```
+¯\_(ツ)¯\_
+    "id": 1,
+    "name": "A green door",
+    "price": 12.50,
+    "tags": ["home", "green"]
+_/¯(ツ)_/¯
+```
