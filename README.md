@@ -47,6 +47,10 @@ jacques attempts to naively detect the type of file based on the file extension.
 _/¯(ツ)_/¯
 ```
 
+# Known Issues
+Any use of the patterns `¯\_(.)¯\_` and `_/¯(.)_/¯` will be correspondingly
+replaced with `{` and '}'. i.e. `¯\_(A)¯\_`, `_/¯(B)_/¯`
+
 # Reviews
 
 Jacques is exactly as useless and half as entertaining as one might expect. -- Shawn Ferry

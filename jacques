@@ -22,10 +22,10 @@ BEGIN {
     } else if (ARGV[i] == "-h") {
       print HELP
       exit
-    } else {
     }
 
-print "Debug:", MODE > "/dev/stderr"
+if (DEUBG == "true")
+  print "Debug:", MODE > "/dev/stderr"
 
   # Start jacques
    SJ = "¯\\_(ツ)¯\\_"
@@ -42,9 +42,9 @@ if ( MODE == "encode" )
   else
     print
 else if ( MODE == "decode")
-  if ( match($0,/¯\_(ツ)¯\_/) )
+  if ( match($0,/¯\\_\(.\)¯\\_/) )
     print "{"
-  else if ( match($0,/_\/¯(ツ)_\/¯/))
+  else if ( match($0,/_\/¯\(.\)_\/¯/))
    print "}"
   else if ( $0 !~ /^{/ )
     print
