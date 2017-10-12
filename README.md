@@ -49,4 +49,4 @@ _/¯(ツ)_/¯
 
 # Reviews
 
-Jacques is exactly as useless and half as entertaining as on might expect. -- Shawn Ferry
+Jacques is exactly as useless and half as entertaining as one might expect. -- Shawn Ferry
